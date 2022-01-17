@@ -1,1 +1,1 @@
-web: java -jar -Dspring.profiles.active=prod target/myapp-1.0-SNAPSHOT.jar
+web: ./mvnw spring-boot:run
