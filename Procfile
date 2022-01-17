@@ -1,1 +1,1 @@
-web: ./mwnw spring-boot:run -Pproduction
+web: ./mvnw spring-boot:run -Pproduction
