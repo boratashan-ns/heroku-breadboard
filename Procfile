@@ -1,1 +1,1 @@
-web: ./mvnw spring-boot:run
+web: java -Dvaadin.productionMode=true  -jar target/myapp-1.0-SNAPSHOT.jar
