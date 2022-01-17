@@ -1,1 +1,1 @@
-web: ./mvnw spring-boot:run -Dspring-boot.run.jvmArguments="-Xms128m -Xmx256m"
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar target/myapp-1.0-SNAPSHOT.jar
