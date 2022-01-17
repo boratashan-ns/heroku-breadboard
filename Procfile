@@ -1,1 +1,1 @@
-web: ./mvnw spring-boot:run -Pproduction
+web: java  -jar target/myapp-1.0-SNAPSHOT.jar
