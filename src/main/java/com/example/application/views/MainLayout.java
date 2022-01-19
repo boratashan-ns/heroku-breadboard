@@ -1,6 +1,7 @@
 package com.example.application.views;
 
 import com.example.application.views.about.AboutView;
+import com.example.application.views.grphqlclient.GraphQlClient;
 import com.example.application.views.helloworld.HelloWorldView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
@@ -111,6 +112,8 @@ public class MainLayout extends AppLayout {
     private List<RouterLink> createLinks() {
         MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class), //
+
+                new MenuItemInfo("GraphQL client", "la la-file", GraphQlClient.class),
 
                 new MenuItemInfo("About", "la la-file", AboutView.class), //
 

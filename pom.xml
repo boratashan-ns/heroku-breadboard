@@ -149,6 +149,25 @@
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+            </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+
         <!-- Include JUnit 4 support for TestBench and others -->
         <dependency>
             <groupId>org.junit.vintage</groupId>
@@ -168,6 +187,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
     <build>
         <defaultGoal>spring-boot:run</defaultGoal>
@@ -200,25 +220,9 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>com.vaadin</groupId>
-                <artifactId>vaadin-maven-plugin</artifactId>
-                <version>${vaadin.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build-frontend</goal>
-                        </goals>
-                        <phase>compile</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <productionMode>true</productionMode>
-                    <pnpmEnable>false</pnpmEnable>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
+
 
     <profiles>
         <profile>

@@ -1,9 +1,8 @@
-package com.example.application.views.helloworld;
+package com.example.application.views.grphqlclient;
 
 import com.example.application.data.DataClient;
 import com.example.application.data.QueueService;
 import com.example.application.views.MainLayout;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -15,10 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
 
-@PageTitle("Hello World")
-@Route(value = "hello", layout = MainLayout.class)
-@RouteAlias(value = "", layout = MainLayout.class)
-public class HelloWorldView extends HorizontalLayout {
+@PageTitle("GraphQlClient")
+@Route(value = "gqlclient", layout = MainLayout.class)
+public class GraphQlClient extends HorizontalLayout {
 
     private static final boolean NON_DURABLE = false;
     private static final String MY_QUEUE_NAME = "myQueue";
@@ -30,7 +28,7 @@ public class HelloWorldView extends HorizontalLayout {
     private DataClient dataClient;
     private QueueService queueService;
     @Autowired
-    public HelloWorldView(DataClient dataClient, QueueService queueService) {
+    public GraphQlClient(DataClient dataClient, QueueService queueService) {
         this.dataClient = dataClient;
         this.queueService = queueService;
         name = new TextField("Your name");
