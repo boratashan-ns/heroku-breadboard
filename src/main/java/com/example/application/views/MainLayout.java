@@ -113,7 +113,7 @@ public class MainLayout extends AppLayout {
         MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class), //
 
-               new MenuItemInfo("GraphQL(DEV-008 from 007)", "la la-file", GraphQlClient.class),
+               new MenuItemInfo("GraphQL(DEV-009 from 008)", "la la-file", GraphQlClient.class),
 
                 new MenuItemInfo("About", "la la-file", AboutView.class), //
 
