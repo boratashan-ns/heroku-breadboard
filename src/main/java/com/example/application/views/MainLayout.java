@@ -116,7 +116,7 @@ public class MainLayout extends AppLayout {
                new MenuItemInfo("GraphQL(DEV-008 from 007)", "la la-file", GraphQlClient.class),
 
                 new MenuItemInfo("About", "la la-file", AboutView.class), //
-
+assaas
         };
         List<RouterLink> links = new ArrayList<>();
         for (MenuItemInfo menuItemInfo : menuItems) {
