@@ -1,5 +1,5 @@
 language: java
-jdk: openjdk10
+jdk: openjdk11
 script:
   - # jdk_switcher use openjdk10
   - # do stuff with OpenJDK 10
