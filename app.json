@@ -1,5 +1,28 @@
 {
   "name": "Newstore : Heroku sample app",
   "description": "A heroku blueprint app for newstore",
-  "addons": [ "heroku-postgresql" ]
+  "image": "heroku/java",
+  "addons": [
+    "heroku-postgresql",
+    {
+     "plan": "cloudamqp:little-lemur",
+      "as": "CLOUDAMQP"
+    }
+  ],
+  "env": {
+    "SAMPLE_TOKEN": {
+      "description": "A sample token that is being generated during deployment.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "5"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
