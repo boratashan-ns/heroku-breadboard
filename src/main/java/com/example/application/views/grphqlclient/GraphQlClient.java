@@ -25,23 +25,26 @@ public class GraphQlClient extends HorizontalLayout {
     private TextField name;
     private Button sayHello;
 
-    private DataClient dataClient;
-    private QueueService queueService;
-    @Autowired
-    public GraphQlClient(DataClient dataClient, QueueService queueService) {
-        this.dataClient = dataClient;
-        this.queueService = queueService;
+    //private DataClient dataClient;
+    //private QueueService queueService;
+
+
+    //@Autowired
+    //public GraphQlClient(DataClient dataClient, QueueService queueService) {
+        public GraphQlClient() {
+       // this.dataClient = dataClient;
+        //this.queueService = queueService;
         name = new TextField("Your name");
         sayHello = new Button("Say hello");
         sayHello.addClickListener(e -> {
-            int count = dataClient.doSomething();
+            int count = 88;//dataClient.doSomething();
             Notification.show("Hello, Welcome to Heroku " + name.getValue() + " - " + count);
         });
 
         name = new TextField("Your name");
         sayHello = new Button("Say hello");
         sayHello.addClickListener(e -> {
-            int count = dataClient.doSomething();
+            int count = 78;//dataClient.doSomething();
             showNotification("Hello, Welcome to Heroku " + name.getValue() + " - " + count);
             //Notification.show("Hello, Welcome to Heroku " + name.getValue() + " - " + count);
         });
@@ -58,9 +61,9 @@ public class GraphQlClient extends HorizontalLayout {
 
         add(name,sayHello);
         add(queueTextField, sendQueue);
-        if (Objects.nonNull(queueService)) {
+      //  if (Objects.nonNull(queueService)) {
 //            queueService.setMessageListener(s -> showNotification("Queue received : " + s));
-        }
+        //}
     }
 
     private void showNotification(String message) {
