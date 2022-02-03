@@ -11,7 +11,7 @@
   ],
   "env": {
     "SAMPLE_TOKEN": {
-      "description": "A sample token that is being generated during deployment.",
+      "description": "A Sample token that is being generated during deployment.",
       "generator": "secret"
     },
     "WEB_CONCURRENCY": {
