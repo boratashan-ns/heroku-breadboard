@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class DefaultEventStreamService implements EventStreamService {
 
-    @Autowired
-    private DataClient dataClient;
+    //@Autowired
+    //private DataClient dataClient;
 
 
     @Override

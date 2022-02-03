@@ -14,8 +14,8 @@ import java.net.http.HttpResponse;
 @RestController
 public class NewstoreEventStreamApi {
 
-    @Autowired
-    private DataClient dataClient;
+//    @Autowired
+//    private DataClient dataClient;
 
     @Autowired
     private EventStreamService eventStreamService;
