@@ -1,5 +1,5 @@
 {
   "name": "Newstore : Heroku sample app",
-  "description": "A Heroku blueprint app for newstore",
+  "description": "A heroku blueprint app for newstore",
   "image": "heroku/java"
 }
