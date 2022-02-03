@@ -3,7 +3,7 @@
   "description": "A Heroku blueprint app for newstore",
   "image": "heroku/java",
   "addons": [
-    "heroku-postgrsesql",
+    "heroku-postgrsedssql",
     {
      "plan": "cloudamqp:little-lemur",
       "as": "CLOUDAMQP"
